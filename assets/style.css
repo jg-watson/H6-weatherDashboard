@@ -1,34 +1,67 @@
+/*General elements*/
 * {
-    background-color: rgb(27, 173, 195);
+    background-color: white;
 }
 
 header {
-    font-size: 30px;
+    font-size: 45px;
     text-align: center;
-    margin-right: 30%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-right: 35%;
     margin-left: 30%;
-    color: yellow;
+    color: rgb(0, 26, 255);
     border: 5px;
     border-style:solid;
 
 }
 
-input {
-    border-color:white;
+h3, h4 {
+    margin-left: 35%;
 }
 
-.days {
+/*selectors*/
+.input-box {
+    background-color: white;
+    border-color:white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 2%;
+    width: 25%;
+}
+
+.current-forecast {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 35px;
+    justify-content: space-evenly;
+    border-radius: 0%;
+    align-items: center;
+    margin-top: 2%;
+    margin-right:25%;
+    margin-left: 25%;
+    background-color:;
+    width: 40%;
     
 }
 
-.search {
-    color: white;
-    border-color: white;
+.future-forecast {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 0px;
+    justify-content: center;
+    margin-right: 60%;
+    margin-left: 25%;
+    width: 70%;
+    
 }
 
+.c-1, .c-2, .c-3, .c-4, .c-5{
+    padding: 20px 40px;
+    margin: 1%;
+}
 
