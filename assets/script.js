@@ -1,19 +1,20 @@
 //Declared variables 
-var currentDateEl =$("date");
-var searchButton = $("search-button");
 var searchCity = $("search-city");
 var currentForecast = ('c-forecast');
 //Api Key 
-var APIKey="dff049b28f04d7e6c1fe41fa2dd60317";
+var apiKey="dff049b28f04d7e6c1fe41fa2dd60317";
 
 function forecast(cityid) {
     var forecastURL= "https://api.openweathermap.org/data/2.5/weather?id="+ cityid + "&appid=" + APIKey;
 
-function fetchWeather(location) 
+var searchButton = document.querySelector('#search');
+
+    function fetchWeather(location) 
     var {lon} = longitude;
     var {lat} = latitude;
     var{timezone} = timezone;
     var {current} = currentWeather;
+    var {apiCall} = `${weatherUrl}https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude={part}&appid=${apiKey}`;
 
     fetch(forecastUrl)
     .then(function(res) {
@@ -24,8 +25,7 @@ function fetchWeather(location)
     });
 }
 
-
-
-
-
-fetchButton.addEventListener('click',getApi);
+//search button
+function searchButton() {
+    document.getElementById('search').click();
+}

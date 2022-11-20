@@ -5,5 +5,3 @@ A five day weather dashboard that runs in the browser and features dynamically u
 
 ## Installation
 Required api key from OpenWeather API.
-
-## Usage
